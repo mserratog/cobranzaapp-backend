@@ -14,7 +14,7 @@ class JwtAuthServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        require_once app_path().'\Helpers\JwtAuht.php';
+        //require_once app_path().'\Helpers\JwtAuht.php';
     }
 
     /**
