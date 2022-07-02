@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Middleware\ApiAuthMiddleware;
+//use App\Helpers\Facades\Btn;
+//use App\Helpers\Facades\JwtAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +23,15 @@ use App\Http\Controllers\ServicioController;
 
 
 Route::get('/', function () {
+    //$oco= new btn;
+    //echo btn::a('ss');
+
     return view('welcome');
+
 });
+
+
+//Route::post('/api/usuario/prueba',[UsuarioController::class,'prueba']);
 
 //Rutas de controlador Usuario
 Route::post('/api/usuario/register',[UsuarioController::class,'register']);

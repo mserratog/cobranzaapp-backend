@@ -195,6 +195,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class
         ,App\Providers\JwtAuthServiceProvider::class
+        ,App\Providers\BtnServiceProvider::class,
 
     ],
 
@@ -211,7 +212,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'JwtAuth' => App\Helpers\JwtAuth::class
+        'JwtAuth' => App\Helpers\Facades\JwtAuth::class,
+        'btn' => App\Helpers\Btn::class
     ])->toArray(),
 
 ];

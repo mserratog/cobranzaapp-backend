@@ -1,5 +1,5 @@
 <?php
-
+/*
 require_once '../vendor/firebase/php-jwt/src/JWT.php';
 require_once '../vendor/firebase/php-jwt/src/SignatureInvalidException.php';
 require_once '../vendor/firebase/php-jwt/src/BeforeValidException.php';
@@ -8,7 +8,7 @@ require_once '../vendor/firebase/php-jwt/src/JWK.php';
 require_once '../vendor/firebase/php-jwt/src/Key.php';
 
 //Namespaces
-use \Firebase\JWT\JWT;
+use \Firebase\JWT\JWT;*/
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 

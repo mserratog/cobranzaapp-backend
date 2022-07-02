@@ -2,25 +2,24 @@
 
 namespace App\Providers;
 
-use App\Helpers\Btn;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
+use App\Helpers\Btn;
 
-class AppServiceProvider extends ServiceProvider
+class BtnServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Register services.
      *
      * @return void
      */
     public function register()
     {
         //
-        App::singleton('btn',btn::class);
+        $this->app->bind('btn',Btn::class);
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap services.
      *
      * @return void
      */

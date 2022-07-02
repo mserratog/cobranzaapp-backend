@@ -4,8 +4,8 @@ namespace App\Helpers;
 //require_once 'vendor\firebase\php\src\JWT.php';
 
 //require_once "../vendor/autoload.php";
-use \Firebase\JWT\JWT;
-use \Firebase\JWT\Key;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use Illuminate\Support\Facades\DB;
 use App\Models\Usuario;
 use PhpParser\Node\Stmt\Else_;
@@ -51,7 +51,7 @@ class JwtAuth{
             $decoded = JWT::decode($jwt, new Key($clave, 'HS256'));
 
             // DEVOLVER LOS DATOS DECODIGICADOS O EL TOKEN, EM FUNCION DE UN PARAMETRO
-            
+
             if(is_null($getToken)) {
                 $data= $jwt;
             }
