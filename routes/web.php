@@ -51,3 +51,5 @@ Route::get('/api/rubro/get-rubros',[RubroController::class,'getRubros']);
 
 //Rutas de controlador Servicios
 Route::get('/api/servicio/get-servicios',[ServicioController::class,'getServicios']);
+Route::get('/api/servicio/get-afiliados-servicio',[ServicioController::class,'getPuestosClientesxServicio']);
+Route::get('/api/servicio/get-deudasxservicioxcliente',[ServicioController::class,'getDeudasClientesxServicio']);
